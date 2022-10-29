@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -12,14 +15,14 @@ video{
     width: 100%;
     height: auto;
     position: absolute;
-    max-height: 70%;
+    max-height: 80%;
 }
 nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: auto;
     padding: 10px, 90px;
     box-sizing: border-box;
     justify-content: space-between;
@@ -29,7 +32,7 @@ nav{
 nav .aagamerilogo{
     display: block;
     margin: 25px 20px;
-    width: 20%;
+    width: 200px;
     height: auto;
     float: left;
 }
@@ -45,7 +48,7 @@ nav .aagamerilogo{
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -55,8 +58,8 @@ nav .aagamerilogo{
 }
 .toggle-button{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 1rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -89,18 +92,16 @@ nav .aagamerilogo{
         text-align: center;
     }
     .navbar-links li a{
-        background: rgba(97, 117, 124, 0.7);
         border-radius: 6px;
-        padding: .5rem 1rem;
     }
     .navbar-links ul li a{
-        line-height: 60px;
+        line-height: 50px;
+        font-size: 25px;
+        padding: 9px 30px;
     }
     .navbar-links.active{
         display: flex;
     }
-
-
 }
 .vidtrailer-container{
     position: absolute;
