@@ -16,7 +16,7 @@
 
 <body style="background-color:#101010">
 
-    <div class="header-section">
+    <div id="home" class="header-section">
         
         <video playsinline autoplay loop muted style="opacity: 1;">
             <source src="video/trailer.mp4" type="video/mp4">
@@ -42,10 +42,10 @@
 
                 <div class="navbar-links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
         </nav>
@@ -56,7 +56,7 @@
     <div class="content">
 
         <div class="platform">
-        <p> Mobile games </p>
+        <p id="games"> Mobile games </p>
         </div>
 
         <div class="games-container">
@@ -135,19 +135,57 @@
 
             <div class="game-content-pc">
             <a class="gamename"> I have to upload everything on github and put it here </a>
+            </div>
 
-        </div>
+         </div>
 
-    </div>
+         <div class="team-container">
+
+            <h1 class="teamtext"> Team </h1>
+
+            <div class="members">
+                <div class="member">
+                    <img class="member-image" src="images/auras.jpg" alt="playstorelogo">
+                    <div class="image-overlay image-overlay--blur">
+                        <div class="image-title"> Aurelian Iancu </div>
+                            <p class="image-description">
+                                Life is like a macao game
+                            </p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img class="member-image" src="images/auras.jpg" alt="playstorelogo">
+                    <div class="image-overlay image-overlay--blur">
+                        <div class="image-title"> Andrei Untea-Dobroiu</div>
+                            <p class="image-description">
+                                Here we go again askjdbnashbdhasbhdashs d sadmajf afjk akdm fks dfknds fnk sdnkf dsnf  fknd fkn sdnf
+                            </p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img class="member-image" src="images/auras.jpg" alt="playstorelogo">
+                    <div class="image-overlay image-overlay--blur">
+                        <div class="image-title"> Andrei Tache </div>
+                            <p class="image-description">
+                                Here we go again askjdbnashbdnd asbdas bdnas d sadmajf afjk akdm fks dfknds fnk sdnkf dsnf  fknd fkn sdnf
+                            </p>
+                    </div>
+                </div>
+            </div>
 
 
-    <!-- <div class="downpanel">
+         </div>
+         
+
+        <div class="downpanel">
         
-        <footer class="copyright">
+        <footer id="bottom" class="copyright">
             &copy; Copyright 2019-2022 AAGameri
         </footer>
 
-    </div> -->
+        </div> 
+
+    </div>
 </body>
 
 </html>

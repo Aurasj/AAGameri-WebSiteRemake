@@ -94,7 +94,7 @@ nav .aagamerilogo{
 }
 .platform{
     background-color: #161515;
-    height: 50px;
+    height: auto;
     width: auto;
     margin-bottom: 20px;
     max-width: 50vw;
@@ -109,6 +109,8 @@ nav .aagamerilogo{
     line-height: 50px;
     text-align: center;
     font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .games-container{
     display: flex;
@@ -145,6 +147,9 @@ img.playstorelogo{
     margin-right: auto;
     width: 80%;
 }
+img.playstorelogo:hover{
+    opacity: 0.7;
+}
 .game-content-pc{
     max-width: 600px;
     margin: 20px;
@@ -159,8 +164,83 @@ img.playstorelogo{
     padding: 10px;
 }
 img.gamebannerpc{
+    border-radius: 5px;
     height: 150px;
     width: 150px;
+}
+.gamebannerpc:hover{
+    opacity: 0.7;
+    box-shadow: 0 0 10px #ccc;
+}
+.team-container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 10px;    
+    width: 75%;
+    height: auto;
+}
+h1.teamtext{
+    background-color: #62a8f7;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.member{
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.member-image{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:left;
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+.image-overlay--blur{
+    backdrop-filter: blur(5px);
+}
+.image-overlay > * {
+    transform: translateY(15px);
+    transition: transform 0.25s;
+}
+.image-overlay:hover{
+    opacity: 1;
+}
+.image-overlay:hover > * {
+    transform: translateY(0);
+}
+.image-title{
+    color: #5784b8;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-size: 3vh;
+    font-weight: bold;
+    margin-top: 10px
+}
+.image-description{
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 .copyright{
     background-color: #161515;
@@ -218,7 +298,10 @@ img.gamebannerpc{
     .games-container{
         flex-direction: column;
     }
-    
+    .member{
+        height: 200px;
+        width: 200px;
+    }
 }
 @media (max-width: 280px){
 
