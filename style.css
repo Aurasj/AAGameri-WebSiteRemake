@@ -260,11 +260,56 @@ h1.teamtext{
     margin-top: 0.5em;
 }
 .image-description{
-    font-size: 2em;
-    margin-top: 0.4em;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
+  font-size: 2em;
+  margin-top: 0.4em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
 }
+
+.github-section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.github-section h2{
+  color:#fff
+}
+
+.github-section img {
+  border-radius: 50%;
+}
+
+.badge, .profile-link, .repo-link{
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: #0366d6;
+  font-weight: bold;
+}
+.profile-name, .profile-bio {
+    color:#fff;
+}
+.repo-link{
+    text-align: center;
+}
+
+.repo-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 15px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.repo-card h3 {
+  margin: 0;
+}
+
 .contact-container{
     margin-left: auto;
     margin-right: auto;
@@ -306,9 +351,16 @@ h1.contact-text{
 }
 .market-logo{
     cursor: pointer;
-    height: 50px;
+    height:60px;
     width: auto;
     margin: 10px;
+}
+.market-logo-twitter{
+    cursor: pointer;
+    height:65px;
+    width: auto;
+    margin: 10px;
+    max-height: 100%;
 }
 .logo-bottom{
     line-height: 50px;
@@ -377,7 +429,7 @@ h1.contact-text{
         width: 200px;
     }
     .image-description{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 }
 @media (max-width: 480px){
