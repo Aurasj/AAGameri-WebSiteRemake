@@ -35,32 +35,38 @@
     let devs = sample.slice();
 
     function render() {
-      grid.innerHTML = '';
-      if (devs.length === 0) {
-        empty.style.display = 'block';
-        return;
-      } else {
-        empty.style.display = 'none';
-      }
+  grid.innerHTML = ''; // curăță grila
 
-      devs.forEach(d => {
-        const card = document.createElement('article');
-        card.className = 'card fade-up';
-        card.innerHTML = `
-          <div class="avatar">
-            <img src="${d.photo}" alt="${d.name}">
-          </div>
-          <div class="info">
-            <h2>${d.name}</h2>
-            <h3>${d.role}</h3>
-            <p>${d.bio}</p>
-            <div class="tags">${(d.games || []).map(g => `<span>${g}</span>`).join('')}</div>
-            <a href="${d.instagram}" target="_blank" class="insta-btn">Profil Instagram</a>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-    }
+  if (devs.length === 0) {
+    empty.style.display = 'block';
+    return;
+  } else {
+    empty.style.display = 'none';
+  }
+
+  devs.forEach((d, index) => {
+    const card = document.createElement('article');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="avatar">
+        <img src="${d.photo}" alt="${d.name}">
+      </div>
+      <div class="info">
+        <h2>${d.name}</h2>
+        <h3>${d.role}</h3>
+        <p>${d.bio}</p>
+        <div class="tags">${(d.games || []).map(g => `<span>${g}</span>`).join('')}</div>
+        <a href="${d.instagram}" target="_blank" class="insta-btn">Profil Instagram</a>
+      </div>
+    `;
+
+    grid.appendChild(card);
+
+    setTimeout(() => {
+      card.classList.add('fade-up');
+    }, index * 150);
+  });
+}
 
     function addExample() {
       const next = {
