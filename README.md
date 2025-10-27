@@ -25,6 +25,7 @@ video/                    → Intro video
 ```
 
 🚀 Features
+
 🔹 Easy navigation: Home, Games, Prototypes, Team, Contact
 
 🔹 Game cards with descriptions and store links
@@ -42,19 +43,24 @@ Mobile Games
 
 Car Dash!! 🏎️
 🔗 Play Store
+
 📝 Competitive car racing. Collect money, buy custom cars, and stay in front!
 
 Balloon Mode!! 🎈
 🔗 Play Store
+
 📝 Control your balloon, collect points, unlock skins & maps.
 
 PC Games
+
 A Light In The Dark 🌑
 🔗 Itch.io
+
 📝 A narrative-driven PC adventure game.
 
 Ping Pong 🏓
 🔗 Itch.io
+
 📝 Classic Ping Pong game, fun multiplayer mechanics.
 
 Upcoming Games
