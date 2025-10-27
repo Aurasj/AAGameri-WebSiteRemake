@@ -26,10 +26,15 @@ video/                    → Intro video
 
 🚀 Features
 🔹 Easy navigation: Home, Games, Prototypes, Team, Contact
+
 🔹 Game cards with descriptions and store links
+
 🔹 Interactive team section with hover info
+
 🔹 Contact form: Name, Email, Message, cancel button
+
 🔹 GitHub section showing profile and repos
+
 🔹 Mobile-friendly & modern visual design
 
 🎮 Games Showcase
