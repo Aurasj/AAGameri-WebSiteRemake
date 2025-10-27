@@ -134,6 +134,10 @@
             <p id="prototypes"> Unreleased games prototypes and open source </p>
         </div>
 
+        <div class="more-button-container">
+              <a href="Htmluri/george.html" class="more-button">View upcoming games</a>
+        </div>
+
         <div class="games-container">
 
 
@@ -153,8 +157,6 @@
                 <div id="repo-card-3" class="repo-card"></div>
             </div>
         </div>
-
-        
 
          <div id="team" class="team-container">
 
@@ -179,11 +181,7 @@
                 <div class="member">
                     <img class="member-image" src="images/Dragos.jpg" alt="memberphoto">
                     <div class="image-overlay image-overlay--blur">
-                        <a href="dragos.html">
-                        <div class="image-title">
-                         Ghimpu Dragos
-                          </div>
-                          </a>
+                        <div class="image-title"> Ghimpu Dragos </div>
 
                             <p class="image-description">
                                 "Silence is the loudest answer to fools"
@@ -199,10 +197,7 @@
                 <div class="member">
                     <img class="member-image" src="images/George.jpg" alt="memberphoto">
                     <div class="image-overlay image-overlay--blur">
-                        <a href="george.html">
-                        <div class="image-title">
-                         George Costia
-                          </div>
+                        <div class="image-title"> George Costia </div>
                           </a>
                             <p class="image-description">
                                 "Slava Ukraina!"
@@ -215,6 +210,10 @@
                         Hold image for info
                     </p>
                 </div>
+            </div>
+
+            <div class="more-button-container">
+                 <a href="Htmluri/dragos.html" class="more-button">More about the developers</a>
             </div>
 
 
@@ -240,21 +239,32 @@
             <a class="contact-email" href="mailto:aagameriaa@gmail.com">
                 aagameriaa@gmail.com
             </a>
-            <form action="https://formspree.io/f/meorwrkr" method="post">
+            <br>
+
+            <button id="showContactFormBtn" class="more-button" style="margin-bottom:20px;">
+                Contact Right Now
+            </button>
+
+           <form id="contactForm" action="https://formspree.io/f/meorwrkr" method="post" style="display:none;">
                 <label for="firstName">Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
                 <br>
- 
+
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
                 <br>
- 
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 <br>
- 
+
                 <input type="submit" value="Send">
+                <button type="button" id="cancelFormBtn" style="margin-left:10px; background-color:#555; color:white; border:none; padding:10px; border-radius:4px; cursor:pointer;">
+                    Cancel
+                </button>
             </form>
+
+
         </div>
 
         <div class="market-container">

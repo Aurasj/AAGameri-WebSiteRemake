@@ -44,3 +44,32 @@ fetchGitHubProfile();
 fetchSpecificRepo("Aurasj", "Horror-Multiplayer", "repo-card-1"); 
 fetchSpecificRepo("Aurasj", "SteamP2PTransport-MLAPI-UNITY-TEST", "repo-card-2"); 
 fetchSpecificRepo("Macaron-s1", "chat-facapp", "repo-card-3"); 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.getElementById('showContactFormBtn');
+    const form = document.getElementById('contactForm');
+
+    btn.addEventListener('click', () => {
+        if (form.style.display === 'none' || form.style.display === '') {
+            form.style.display = 'block';
+            btn.style.display = 'none'; // ascunde butonul după click
+        } else {
+            form.style.display = 'none';
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.getElementById('showContactFormBtn');
+    const form = document.getElementById('contactForm');
+    const cancelBtn = document.getElementById('cancelFormBtn');
+
+    btn.addEventListener('click', () => {
+        form.style.display = 'block';
+        btn.style.display = 'none'; // ascunde butonul "Contact"
+    });
+
+    cancelBtn.addEventListener('click', () => {
+        form.style.display = 'none';
+        btn.style.display = 'inline-block'; // arata din nou butonul
+    });
+});
