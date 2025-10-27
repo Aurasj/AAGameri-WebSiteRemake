@@ -79,11 +79,13 @@ h1 {
   border-radius: 20px;
   padding: 25px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  transition: 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   flex-wrap: wrap;
 }
+
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
   background: rgba(255,255,255,0.08);
 }
 
@@ -98,6 +100,12 @@ h1 {
   justify-content: center;
   background: rgba(255,255,255,0.05);
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover .avatar {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
 }
 
 .avatar img {
@@ -164,12 +172,16 @@ footer .back:hover {
 }
 
 .fade-up {
-  animation: fadeUp 0.8s ease both;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s forwards;
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeInDown {
