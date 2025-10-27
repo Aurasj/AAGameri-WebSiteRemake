@@ -22,6 +22,7 @@ Cssuri/                   → CSS files
 js-uri/                   → JavaScript files
 images/                   → Logos, banners, screenshots
 video/                    → Intro video
+```
 
 🚀 Features
 🔹 Easy navigation: Home, Games, Prototypes, Team, Contact
