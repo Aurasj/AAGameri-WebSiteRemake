@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btn.addEventListener('click', () => {
         if (form.style.display === 'none' || form.style.display === '') {
             form.style.display = 'block';
-            btn.style.display = 'none'; // ascunde butonul după click
+            btn.style.display = 'none'; // ascunde butonul dupa click
         } else {
             form.style.display = 'none';
         }
