@@ -25,6 +25,8 @@ video{
 }
 nav{
     position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
     z-index: 1;
     top: 0;
     left: 0;
@@ -39,17 +41,31 @@ nav{
 nav .aagamerilogo{
     display: block;
     margin: 25px 20px;
-    width: 40%;
+    width: 200px;
     max-width: 200px;
     height: auto;
     float: left;
 }
+nav > a:first-child{
+    flex: 0 0 auto;
+}
 .navbar-links ul{
     list-style: none;
-    float: right;
+    float: none;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+.navbar-links{
+    margin-left: auto;
+    min-width: 0;
+    align-self: center;
+    flex: 0 1 auto;
+}
+.navbar-links ul li{
+    flex-shrink: 0;
 }
 .navbar-links ul li a{
     line-height: 80px;
@@ -66,6 +82,7 @@ nav .aagamerilogo{
 }
 .toggle-button{
     position: absolute;
+    z-index: 2;
     top: 24px;
     right: 1rem;
     display: none;
@@ -124,6 +141,33 @@ nav .aagamerilogo{
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
+}
+.web-apps-container{
+    align-items: stretch;
+}
+.web-app-card{
+    width: min(600px, calc(50% - 40px));
+    box-sizing: border-box;
+    text-align: center;
+}
+.web-app-banner{
+    width: 100%;
+    aspect-ratio: 1204 / 500;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.web-app-banner img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.web-app-description{
+    min-height: 70px;
+    margin-top: 20px;
+}
+.web-app-button{
+    margin: 0 auto 10px;
 }
 img.gamebanner{
     margin-left: auto;
@@ -390,6 +434,22 @@ textarea {
   box-sizing: border-box;
 }
 
+.form-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.form-privacy-note {
+  margin: 0 0 15px;
+  font-size: 0.85rem !important;
+  line-height: 1.4;
+  color: #aaa !important;
+}
+
 input[type="submit"] {
   background-color: #333; 
   color: #fff; 
@@ -421,6 +481,7 @@ input[type="submit"]:hover {
     cursor: pointer;
     height:65px;
     width: auto;
+    border-radius: 50%;
     margin: 10px;
     max-height: 100%;
 }
@@ -441,6 +502,33 @@ input[type="submit"]:hover {
 @media (max-width: 960px){
     .header-section{
         height: 60vw;
+    }
+}
+@media (min-width: 721px) and (max-width: 1050px){
+    nav .aagamerilogo{
+        width: 170px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .navbar-links{
+        margin-left: auto;
+    }
+    .navbar-links ul li a{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+}
+@media (min-width: 721px) and (max-width: 850px){
+    nav .aagamerilogo{
+        width: 145px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .navbar-links ul li a{
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: 12px;
     }
 }
 @media (max-width: 720px){
@@ -485,6 +573,9 @@ input[type="submit"]:hover {
     }
     .games-container{
         flex-direction: column;
+    }
+    .web-app-card{
+        width: auto;
     }
     .member{
         height: 200px;

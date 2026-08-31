@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="Cssuri/style.css">
-    <script src="js-uri/script.js" defer></script>
+    <link rel="stylesheet" href="Cssuri/style.css?v=20260831-3">
+    <script src="js-uri/script.js?v=20260831-2" defer></script>
 
     <title>AAGameri</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <meta name="google-site-verification" content="6uzqWELNdTXpSjpbhPDX_HytowyMDi6s8bV4ch7E_AM" />
 
@@ -20,7 +20,7 @@
 
     <div id="home" class="header-section">
         
-        <video playsinline autoplay loop muted style="opacity: 1;">
+        <video playsinline autoplay loop muted preload="auto" poster="images/hero-poster.webp" style="opacity: 1;">
             <source src="video/trailer.mp4" type="video/mp4">
         </video>
 
@@ -31,20 +31,21 @@
         </div>
 
         <nav>
-                <a href="Index.html">
-                    <img class="aagamerilogo" src="images/aagamerilogo.png" alt="aagamerilogo">
+                <a href="/">
+                    <img class="aagamerilogo" src="images/aagamerilogo.webp" alt="aagamerilogo" width="400" height="62" decoding="async" fetchpriority="high">
                 </a>
                 
-                <a class="toggle-button">
+                <a class="toggle-button" role="button" tabindex="0" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </a>
 
-                <div class="navbar-links">
+                <div id="primary-navigation" class="navbar-links">
                     <ul>
                         <li><a href="#home">Home</a></li>
+                        <li class="mobile-nav-only"><a href="#apps">Apps</a></li>
                         <li><a href="#games">Games</a></li>
                         <li><a href="#prototypes">Prototypes</a></li>
                         <li><a href="#team">Team</a></li>
@@ -59,13 +60,49 @@
     <div class="content">
 
         <div class="platform">
+            <p id="apps">Web Apps</p>
+        </div>
+
+        <div class="games-container web-apps-container">
+            <div class="game-content web-app-card">
+                <div class="web-app-banner">
+                    <img src="images/studytrack-banner.webp" alt="StudyTrack study timer and progress logo" width="1204" height="500" loading="lazy" decoding="async">
+                </div>
+
+                <p class="gamesdescription web-app-description">
+                    Organize your study sessions, track your time and keep your progress in one place.
+                </p>
+                <p class="gamename-button">StudyTrack</p>
+
+                <a href="/public/study/" class="more-button web-app-button">
+                    Open StudyTrack
+                </a>
+            </div>
+
+            <div class="game-content web-app-card">
+                <div class="web-app-banner">
+                    <img src="images/memobet-banner-wide.webp" alt="MemoBet fruit symbols" width="1204" height="500" loading="lazy" decoding="async">
+                </div>
+
+                <p class="gamesdescription web-app-description">
+                    Try the classic slot machine experience directly in your browser.
+                </p>
+                <p class="gamename-button">MemoBet</p>
+
+                <a href="/public/pacanele/" class="more-button web-app-button">
+                    Open MemoBet
+                </a>
+            </div>
+        </div>
+
+        <div class="platform">
         <p id="games"> Mobile games </p>
         </div>
 
         <div class="games-container">
 
             <div class="game-content">
-                <img class="gamebanner" src="images/cardashbanner.png" alt="cardashbanner">
+                <img class="gamebanner" src="images/cardashbanner.png" alt="cardashbanner" loading="lazy" decoding="async">
 
                 <p class="gamesdescription">
                 <b>A competitive car racing game</b><br>
@@ -77,14 +114,14 @@
                 </p>
                 <p class="gamename-button">Car Dash!!</p>
 
-                <a href="https://play.google.com/store/apps/details?id=com.AAGameri.CarDash" target="_blank"> 
-                    <img class="playstorelogo" src="images/playstorelogo.png" alt="playstorelogo">
+                <a href="https://play.google.com/store/apps/details?id=com.AAGameri.CarDash" target="_blank" rel="noopener noreferrer">
+                    <img class="playstorelogo" src="images/playstorelogo.png" alt="playstorelogo" loading="lazy" decoding="async">
                 </a>
 
             </div>
 
             <div class="game-content">
-                <img class="gamebanner" src="images/balloonmodebanner.png" alt="balloonmodebanner">
+                <img class="gamebanner" src="images/balloonmodebanner.png" alt="balloonmodebanner" loading="lazy" decoding="async">
             
                 <p class="gamesdescription">
                 <b>Control the balloon and collect money and points to customize the balloon to your liking</b><br>
@@ -97,8 +134,8 @@
                 <p class="gamename-button">Balloon Mode!!</p>
 
                 <div class="playstore">
-                <a href="https://play.google.com/store/apps/details?id=com.AAGameri.BalloonMode" target="_blank">
-                    <img class="playstorelogo" src="images/playstorelogo.png" alt="playstorelogo">
+                <a href="https://play.google.com/store/apps/details?id=com.AAGameri.BalloonMode" target="_blank" rel="noopener noreferrer">
+                    <img class="playstorelogo" src="images/playstorelogo.png" alt="playstorelogo" loading="lazy" decoding="async">
                 </a>
                 </div>
 
@@ -115,15 +152,15 @@
             <div class="game-content-pc">
 
                 <a class="gamename"> A Light In The Dark </a>
-                <a href="https://auras14.itch.io/findadam?secret=48ar041fwfgAaJPfskzZRKKxk" target="_blank">
-                    <img class="gamebannerpc" src="images/alight.png" alt="">
+                <a href="https://auras14.itch.io/findadam?secret=48ar041fwfgAaJPfskzZRKKxk" target="_blank" rel="noopener noreferrer">
+                    <img class="gamebannerpc" src="images/alight.webp" alt="" width="300" height="300" loading="lazy" decoding="async">
                 </a>
             </div>
 
             <div class="game-content-pc">
                 <a class="gamename"> Ping Pong </a>
-                <a href="https://auras14.itch.io/pong?secret=KMebSReE74FL91qSBPUvmA13Ag" target="_blank">
-                    <img class="gamebannerpc" src="images/pingpong.png" alt="">
+                <a href="https://auras14.itch.io/pong?secret=KMebSReE74FL91qSBPUvmA13Ag" target="_blank" rel="noopener noreferrer">
+                    <img class="gamebannerpc" src="images/pingpong.png" alt="" width="105" height="83" loading="lazy" decoding="async">
                 </a>
 
             </div>
@@ -144,10 +181,10 @@
             <div class="github-section">
                 <h2>Connect with Aurelian on GitHub</h2>
                 
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="50" height="50" loading="lazy" decoding="async">
                     
-                <a href="https://github.com/aurasj" target="_blank" class="badge">
-                  <img src="https://img.shields.io/badge/GitHub-Profile-blue?logo=github" alt="GitHub Profile Badge">
+                <a href="https://github.com/aurasj" target="_blank" rel="noopener noreferrer" class="badge">
+                  <img src="https://img.shields.io/badge/GitHub-Profile-blue?logo=github" alt="GitHub Profile Badge" loading="lazy" decoding="async">
                 </a>
                 
                 <div id="github-profile"></div>
@@ -164,7 +201,7 @@
 
             <div class="members">
                 <div class="member">
-                    <img class="member-image" src="images/auras.jpeg" alt="memberphoto">
+                    <img class="member-image" src="images/auras.jpeg" alt="memberphoto" width="320" height="320" loading="lazy" decoding="async">
                     <div class="image-overlay image-overlay--blur">
                         <div class="image-title"> Aurelian Iancu </div>
                             <p class="image-description">
@@ -179,7 +216,7 @@
                     </p>
                 </div>
                 <div class="member">
-                    <img class="member-image" src="images/untea.jpg" alt="memberphoto">
+                    <img class="member-image" src="images/untea.jpg" alt="memberphoto" width="709" height="798" loading="lazy" decoding="async">
                     <div class="image-overlay image-overlay--blur">
                         <div class="image-title"> Untea Andrei </div>
 
@@ -195,10 +232,9 @@
                     </p>
                 </div>
                 <div class="member">
-                    <img class="member-image" src="images/tache.jpg" alt="memberphoto">
+                    <img class="member-image" src="images/tache.webp" alt="memberphoto" width="600" height="600" loading="lazy" decoding="async">
                     <div class="image-overlay image-overlay--blur">
                         <div class="image-title"> Tache Andrei </div>
-                          </a>
                             <p class="image-description">
                                 "Put your hands on your knees and roootation!"
                             </p>
@@ -225,8 +261,8 @@
             <p>
                 If you want to support us
             </p>
-            <a href="https://www.patreon.com/aagameri" target="_blank">
-            <img class="patreonlogo" src="images/patreonlogo.png" alt="patreonlogo">
+            <a href="https://www.patreon.com/aagameri" target="_blank" rel="noopener noreferrer">
+            <img class="patreonlogo" src="images/patreonlogo.webp" alt="patreonlogo" width="960" height="221" loading="lazy" decoding="async">
             </a>
 
             <p class="contact-description">
@@ -247,16 +283,25 @@
 
            <form id="contactForm" action="https://formspree.io/f/meorwrkr" method="post" style="display:none;">
                 <label for="firstName">Name:</label>
-                <input type="text" id="firstName" name="firstName" required>
+                <input type="text" id="firstName" name="firstName" minlength="2" maxlength="80" autocomplete="name" required>
                 <br>
 
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" maxlength="254" autocomplete="email" required>
                 <br>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" minlength="10" maxlength="2000" rows="6" required></textarea>
                 <br>
+
+                <div class="form-honeypot" aria-hidden="true">
+                    <label for="companyWebsite">Leave this field empty:</label>
+                    <input type="text" id="companyWebsite" name="_gotcha" tabindex="-1" autocomplete="off">
+                </div>
+
+                <p class="form-privacy-note">
+                    Your contact details and message are processed by Formspree to deliver this form.
+                </p>
 
                 <input type="submit" value="Send">
                 <button type="button" id="cancelFormBtn" style="margin-left:10px; background-color:#555; color:white; border:none; padding:10px; border-radius:4px; cursor:pointer;">
@@ -268,16 +313,16 @@
         </div>
 
         <div class="market-container">
-        <img class="market-logo" onclick="location.href='https://www.instagram.com/aagameri/';" src="images/insta.png" alt="instagram-logo">
-        <img class="market-logo-twitter" onclick="location.href='https://www.twitter.com/AaGameri/';" src="images/twitter.png" alt="twitter-logo">                
-        <img class="market-logo" onclick="location.href='https://play.google.com/store/apps/dev?id=6036269663958689019';" src="images/googleplaystore.png" alt="google-playstore-logo">
+        <img class="market-logo" onclick="location.href='https://www.instagram.com/aagameri/';" src="images/insta.webp" alt="instagram-logo" width="120" height="120" loading="lazy" decoding="async">
+        <img class="market-logo-twitter" onclick="location.href='https://www.twitter.com/AaGameri/';" src="images/twitter-clean.webp" alt="X logo" loading="lazy" decoding="async">
+        <img class="market-logo" onclick="location.href='https://play.google.com/store/apps/dev?id=6036269663958689019';" src="images/googleplaystore.png" alt="google-playstore-logo" width="271" height="300" loading="lazy" decoding="async">
         </div>   
 
         <div class="downpanel">
         
         <footer id="bottom" class="copyright">
-            <img class="logo-bottom" src="images/aagamerilogo.png" alt="aagamerilogo">
-            <img class="logo-bottom" src="images/logo.png" alt="aagamerilogo">
+            <img class="logo-bottom" src="images/aagamerilogo.webp" alt="aagamerilogo" width="400" height="62" loading="lazy" decoding="async">
+            <img class="logo-bottom" src="images/logo-footer.webp" alt="aagamerilogo" width="240" height="171" loading="lazy" decoding="async">
             &copy; Copyright 2020 - 2026 AAGameri
         </footer>
 
